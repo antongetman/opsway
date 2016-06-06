@@ -9,8 +9,9 @@ class Csv implements WriterInterface
     protected $file;
     protected $filename;
 
-    public function __construct()
+    public function __construct(array $params) //TASK 3, add $config['params']
     {
+        $this->filename = $params['filename']; //TAKS 3, it's defined in /config/file.php
         $this->checkFileName();
     }
 
