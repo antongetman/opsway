@@ -11,7 +11,7 @@ try {
     $processor = new YieldProcessor(
         ReaderFactory::create($config['reader'], $config['params']),
         WriterFactory::create($config['writer'], $config['params']),
-        new ConsoleLogger(true)
+        new ConsoleLogger(false) //TASK 4, remove extra top symbols by disabling debug mode
     );
     // Processing
     foreach ($processor->processing() as $item) {
