@@ -1,0 +1,5 @@
+I meet in functional next classes: 
+- OpsWay\Migration\Reader\Db\Product - for reading data from table products;
+- OpsWay\Migration\Writer\File\CSV - for writing data from reader into csv file;
+- OpsWay\Migration\Writer\ConsoleOutput - for output data from reader in console; 
+- OpsWay\Migration\Writer\Html - for output data from reader in html;
